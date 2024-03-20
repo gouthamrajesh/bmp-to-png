@@ -18,7 +18,7 @@ def convert_bmp_to_png(folder_path):
                     print(f"Failed to convert {bmp_path}: {e}")
     return num_files_changed
 
-folder_path = "./FINGERPRINT"
+folder_path = "./FOLDER"
 
 # Convert BMP images within the s6 folder
 num_s6_files_changed = convert_bmp_to_png(os.path.join(folder_path, "s6"))

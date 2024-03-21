@@ -11,7 +11,6 @@ def convert_bmp_to_png(folder_path):
                 try:
                     with Image.open(bmp_path) as img:
                         img.save(png_path)
-                    os.remove(bmp_path)  # Remove the original BMP file
                     num_files_changed += 1
                     print(f"Converted {bmp_path} to {png_path} and removed original BMP file")
                 except Exception as e:

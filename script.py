@@ -20,10 +20,14 @@ def convert_bmp_to_png(folder_path):
 folder_path = "./FOLDER"
 
 # Convert BMP images within the s6 folder
-num_s6_files_changed = convert_bmp_to_png(os.path.join(folder_path, "s6"))
+# num_s6_files_changed = convert_bmp_to_png(os.path.join(folder_path, "s6"))
 
 # Convert BMP images within the s8 folder
-num_s8_files_changed = convert_bmp_to_png(os.path.join(folder_path, "s8"))
+# num_s8_files_changed = convert_bmp_to_png(os.path.join(folder_path, "s8"))
 
-total_files_changed = num_s6_files_changed + num_s8_files_changed
-print(f"Total number of files converted and replaced: {total_files_changed}")
+# Convert BMP images within the s8 folder
+num_s2_files_changed = convert_bmp_to_png(os.path.join(folder_path, "s2"))
+
+# total_files_changed = num_s6_files_changed + num_s8_files_changed
+# print(f"Total number of files converted and replaced: {total_files_changed}")
+print(f"Total number of files converted and replaced: {num_s2_files_changed}")

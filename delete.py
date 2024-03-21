@@ -17,10 +17,23 @@ def delete_bmp_files(folder_path):
 folder_path = "./FOLDER"
 
 # Delete BMP files within the s6 folder
-num_s6_files_deleted = delete_bmp_files(os.path.join(folder_path, "s6"))
+#num_s6_files_deleted = delete_bmp_files(os.path.join(folder_path, "s6"))
 
 # Delete BMP files within the s8 folder
-num_s8_files_deleted = delete_bmp_files(os.path.join(folder_path, "s8"))
+#num_s8_files_deleted = delete_bmp_files(os.path.join(folder_path, "s8"))
 
-total_files_deleted = num_s6_files_deleted + num_s8_files_deleted
-print(f"Total number of BMP files deleted: {total_files_deleted}")
+#total_files_deleted = num_s6_files_deleted + num_s8_files_deleted
+#print(f"Total number of BMP files deleted: {total_files_deleted}")
+
+# Convert BMP images within the s6 folder
+# num_s6_files_changed = convert_bmp_to_png(os.path.join(folder_path, "s6"))
+
+# Convert BMP images within the s8 folder
+# num_s8_files_changed = convert_bmp_to_png(os.path.join(folder_path, "s8"))
+
+# Convert BMP images within the s8 folder
+num_s2_files_changed = delete_bmp_files(os.path.join(folder_path, "s2"))
+
+# total_files_changed = num_s6_files_changed + num_s8_files_changed
+# print(f"Total number of files converted and replaced: {total_files_changed}")
+print(f"Total number of files converted and replaced: {num_s2_files_changed}")
